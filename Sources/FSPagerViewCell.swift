@@ -150,3 +150,10 @@ open class FSPagerViewCell: UICollectionViewCell {
     }
     
 }
+
+open class FSPagerViewNoShadowCell: FSPagerViewCell {
+    override func commonInit() {
+        self.contentView.backgroundColor = UIColor.clear
+        self.backgroundColor = UIColor.clear
+    }
+}
