@@ -214,6 +214,11 @@ open class FSPagerView: UIView,UICollectionViewDataSource,UICollectionViewDelega
         return self.collectionView.panGestureRecognizer
     }
     
+    @objc
+    open var cvc: UICollectionView {
+        return self.collectionView
+    }
+    
     @objc open fileprivate(set) dynamic var currentIndex: Int = 0
     
     // MARK: - Private properties
